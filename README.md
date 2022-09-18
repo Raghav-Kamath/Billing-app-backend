@@ -10,13 +10,13 @@ https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/
 
 Download MongoDB Community Server from the official website  - https://www.mongodb.com/try/download/community?tck=docs_server 
 
-Install all the dependenies using 
+Install all the dependencies using 
 
-  $ npm i
+      $ npm i
   
   
 Run the development server using 
 
-$ npm devstart
+      $ npm devstart
 
 There is dummy data in the function which we can use to run
