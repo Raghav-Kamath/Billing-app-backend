@@ -23,7 +23,7 @@ router.post("/getpayment",async(req,res)=>{
         console.log(data)
         const order=await ordersModel.create(req.body)
         order.razorpayLink=data.short_url
-        order.save()
+        await order.save()
         res.json({link:data.short_url})
     }).catch(err=>{
         console.log(err)
@@ -62,16 +62,5 @@ router.post("/addOrders",async(req,res)=>{
         res.send({error:"Bad request"})
     }
 })
-
-// router.post("/getLink",(req,res)=>{
-//     try{
-//         const l=ordersModel.findOne({orderId:req.body.orderId})
-//         res.send(l)
-//     }
-//     catch{
-//         res.send({error:"Bad request"})
-//     }
-// })
-
 
 module.exports=router

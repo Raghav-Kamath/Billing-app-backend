@@ -8,6 +8,7 @@ const Orders = new mongoose.Schema({
   modeofCommunication:String,
   homeDelivery:Boolean,
   operatorId: {type:Number},
+  operatorName:String,
   products: [{productId:Number,quantity:Number}],
   total: Number,
   offlinePayment:{type:Boolean,default:false},
