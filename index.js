@@ -50,27 +50,43 @@ app.use(productRoutes)
 app.use(paymentRoutes)
 
 
-// productModel.create({
-//   name:"Redmi 9",
-//   id:"11111",
-//   category:"Phone",
-//   color:"white",
-//   amount:12900
-// })
+
 
 async function k()
 {
-  // const k=await productModel.findOne({id:"11111"})
-  // ordersModel.create({
-  //   orderId:"8923874",
-  //   products:[{productId:k._id,quantity:3}]
-  // })
-  
+    //     productModel.create({
+    //   name:"Redmi 19",
+    //   id:"2222",
+    //   category:"Phone",
+    //   color:"white",
+    //   amount:12990
+    // })
+    //     productModel.create({
+    //   name:"Redmi 10",
+    //   id:"111111",
+    //   category:"Phone",
+    //   color:"white",
+    //   amount:12990
+    // })
+    //     productModel.create({
+    //   name:"Mi TV",
+    //   id:"29348",
+    //   category:"TV",
+    //   color:"white",
+    //   amount:29483
+    // })
 //   operatorModel.create({name:'Ben Ten',
 //   id: 111111,
 //   password: await bcrypt.hash('bentenover',saltRounds),
 //   storeType: 'Mi Store',
-//   storeName: 'Vijjus',
+//   storeName: 'Vijjsd',
+//   location: 'America'
+// })
+//   operatorModel.create({name:'Mike WIck',
+//   id: 22222,
+//   password: await bcrypt.hash('letsg0',saltRounds),
+//   storeType: 'Mi Store',
+//   storeName: 'Vijjsd',
 //   location: 'America'
 // })
 }
