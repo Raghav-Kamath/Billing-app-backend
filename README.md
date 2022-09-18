@@ -17,6 +17,6 @@ Install all the dependencies using
   
 Run the development server using 
 
-      $ npm devstart
+      $ npm run devstart
 
 There is dummy data in the function which we can use to run
