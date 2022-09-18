@@ -1,8 +1,8 @@
-import mongoose from 'mongoose'
+const mongoose=require('mongoose')
 
 const Products = new mongoose.Schema({
-  productName: String,
-  productId: Number,
+  name: String,
+  id: {type:Number,unique:true},
   category: String,
   color: String,
   amount: Number,

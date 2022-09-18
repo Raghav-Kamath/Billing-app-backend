@@ -1,18 +1,23 @@
-import mongoose from 'mongoose'
+const mongoose=require('mongoose')
 
 const Orders = new mongoose.Schema({
-  orderId: String,
+  orderId: {type:String,unique:true},
   customerName: String,
   customerNumber: Number,
   customerEmail: String,
-  operatorId: Number,
-  products: [{quantity: Number,amount: Number,productId: Number}],
+  modeofCommunication:String,
+  homeDelivery:Boolean,
+  operatorId: {type:Number},
+  products: [{productId:Number,quantity:Number}],
   total: Number,
-  razorpayLink: String
+  offlinePayment:{type:Boolean,default:false},
+  razorpayLink: String,
+  razorpaymentID:String,
+  createdAt:{type:Date,default:Date.now()}
 });
 
-const orderModel = mongoose.model('Orders', Orders);
+const ordersModel = mongoose.model('Orders', Orders);
 
-module.exports = operatorModel
+module.exports = ordersModel
 
 
